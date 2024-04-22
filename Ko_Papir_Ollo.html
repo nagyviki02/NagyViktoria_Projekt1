@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kő, Papír, Olló</title>
+  <link rel="stylesheet" href="stilus.css">
+</head>
+
+<body>
+  <h1>Kő, Papír, Olló</h1>
+
+  <div id="jatek">
+    <div id="jatekos" class="pontok">
+      <h2>Játékos</h2>
+      <div class="pont">Nyertes kör: <span id="jatNyert">0</span></div>
+    </div>
+
+    <div id="lehetoseg">
+        <img src="kő.png" alt="Kő" onclick="jatValaszt('kő')">
+        <img src="papír.png" alt="Papír" onclick="jatValaszt('papír')">
+        <img src="olló.png" alt="Olló" onclick="jatValaszt('olló')">
+    </div>
+
+    <div id="szg" class="pontok">
+      <h2>Számítógép</h2>
+      <div class="pont">Nyertes kör: <span id="szgNyert">0</span></div>
+    </div>
+  </div>
+  
+  <div id="result"> </div>
+  <div id="kepek"></div>
+  
+  
+  <button onclick="ujra()" id="gomb">Újra</button>
+
+  <script src="javasc.js"></script>
+
+</body>
+</html>
